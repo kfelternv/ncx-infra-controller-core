@@ -49,10 +49,11 @@ readinessProbe:
   failureThreshold: 3
   successThreshold: 1
 
+## OpenTelemetry log collector sidecar (must be set by user)
 lokiLogCollector:
   image:
-    repository: ghcr.io/open-telemetry/opentelemetry-collector-releases/opentelemetry-collector-contrib
-    tag: "0.81.0"
+    repository: ""
+    tag: ""
 
 serviceMonitor:
   enabled: true

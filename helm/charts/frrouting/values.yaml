@@ -9,8 +9,9 @@ image:
   tag: ""
   pullPolicy: IfNotPresent
 
+## FRR exporter sidecar image (must be set by user)
 exporterImage:
-  repository: ghcr.io/tynany/frr_exporter
+  repository: ""
   tag: ""
   pullPolicy: IfNotPresent
 

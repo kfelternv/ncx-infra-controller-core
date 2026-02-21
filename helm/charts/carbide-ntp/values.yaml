@@ -13,10 +13,10 @@ global:
 
 replicas: 3
 
-## Chrony NTP image (not shared with global.image)
+## Chrony NTP image (not shared with global.image — must be set by user)
 image:
-  repository: dockurr/chrony
-  tag: latest
+  repository: ""
+  tag: ""
 
 service:
   port: 123

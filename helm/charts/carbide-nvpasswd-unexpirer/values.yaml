@@ -5,9 +5,10 @@ global:
     app.kubernetes.io/managed-by: Helm
     app.kubernetes.io/part-of: site-controller
 
+## Image for the password unexpirer (must be set by user)
 image:
-  repository: ubuntu
-  tag: jammy
+  repository: ""
+  tag: ""
 
 env:
   EGX_ADMIN_PASSWORD: ""

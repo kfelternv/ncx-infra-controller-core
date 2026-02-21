@@ -115,12 +115,13 @@ unbound:
 
 The `global.image.repository` and `global.image.tag` values **must** be set -- they default to empty strings. Most subcharts use the global image reference. The following subcharts use their own separate image references and do **not** inherit `global.image`:
 
-| Subchart | Image Parameter | Default Repository |
-|----------|----------------|--------------------|
-| `carbide-ntp` | `carbide-ntp.image.repository` / `.tag` | `dockurr/chrony` |
-| `carbide-nvpasswd-unexpirer` | `carbide-nvpasswd-unexpirer.image.repository` / `.tag` | `ubuntu:jammy` |
+| Subchart | Image Parameter | Default |
+|----------|----------------|---------|
+| `carbide-ntp` | `carbide-ntp.image.repository` / `.tag` | `""` (must be set) |
+| `carbide-nvpasswd-unexpirer` | `carbide-nvpasswd-unexpirer.image.repository` / `.tag` | `""` (must be set) |
 | `frrouting` | `frrouting.image.repository` / `.tag` | `""` (must be set) |
-| `frrouting` (exporter) | `frrouting.exporterImage.repository` / `.tag` | `ghcr.io/tynany/frr_exporter` |
+| `frrouting` (exporter) | `frrouting.exporterImage.repository` / `.tag` | `""` (must be set) |
+| `carbide-ssh-console-rs` (log collector) | `carbide-ssh-console-rs.lokiLogCollector.image.repository` / `.tag` | `""` (must be set) |
 | `unbound` | `unbound.image.repository` / `.tag` | `""` (must be set) |
 | `unbound` (exporter) | `unbound.exporterImage.repository` / `.tag` | `""` (must be set) |
 
